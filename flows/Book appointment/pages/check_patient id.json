@@ -1,0 +1,26 @@
+{
+  "name": "dbcc90b1-29e0-45ba-ae9d-b39e0a8c8ab7",
+  "displayName": "check_patient id",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Healthcare",
+    "tag": "check_patient"
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.patient_found = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "appt_type",
+    "name": "da94eb90-74d8-49b8-8375-c285c941c32d"
+  }, {
+    "condition": "$session.params.patient_found = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Register patient",
+    "name": "e7c85c76-daed-460a-b5b0-9b82c88d539d"
+  } ]
+}

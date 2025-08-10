@@ -1,0 +1,11 @@
+{
+  "name": "1d0285b9-c594-42ab-95c7-83056340aded",
+  "displayName": "Healthcare",
+  "genericWebService": {
+    "uri": "https://db8746d3a033.ngrok-free.app",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

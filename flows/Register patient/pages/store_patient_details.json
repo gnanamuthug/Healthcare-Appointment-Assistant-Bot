@@ -1,0 +1,11 @@
+{
+  "name": "3fb6ae45-0d9a-4bf7-b5c1-4380650c044f",
+  "displayName": "store_patient_details",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Healthcare",
+    "tag": "create_patient"
+  }
+}

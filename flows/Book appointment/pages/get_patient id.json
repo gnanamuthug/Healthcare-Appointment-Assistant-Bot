@@ -1,0 +1,29 @@
+{
+  "name": "ae370338-362c-4b8c-8478-1d694316e7ab",
+  "displayName": "get_patient id",
+  "form": {
+    "parameters": [ {
+      "displayName": "patient_id",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Pease enter your patient_id here ?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.patient_id != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "check_patient id",
+    "name": "21bb5794-13ae-41c9-a34c-d591e7aa6043"
+  } ]
+}

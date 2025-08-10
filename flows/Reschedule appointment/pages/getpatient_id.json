@@ -1,0 +1,29 @@
+{
+  "name": "d82971a2-f3d9-4b5c-8013-7dc8c43df968",
+  "displayName": "getpatient_id",
+  "form": {
+    "parameters": [ {
+      "displayName": "patient_id",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please enter your patient id ?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.patient_id != \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "check_booking_date",
+    "name": "fbe215b4-d7e2-46e4-9fec-751f819c2172"
+  } ]
+}

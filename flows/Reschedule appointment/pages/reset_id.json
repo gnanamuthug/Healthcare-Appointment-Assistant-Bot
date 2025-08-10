@@ -1,0 +1,59 @@
+{
+  "name": "50578df1-c0bb-46dd-b34b-a904c8a7b272",
+  "displayName": "reset_id",
+  "form": {
+    "parameters": [ {
+      "displayName": "confirmation",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "richContent": [ [ {
+          "text": [ "Tap on one of the options below to continue." ],
+          "title": "Do you want book an appointment",
+          "type": "description"
+        }, {
+          "options": [ {
+            "text": "yes"
+          }, {
+            "text": "No"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "patient_id",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.confirmation = \"Yes\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "To book an appointment" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Book appointment",
+    "name": "98215957-b28d-4867-b4d3-150a79ba2664"
+  }, {
+    "condition": "$session.params.confirmation = \"No\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "75470c03-65ec-4dd8-b065-5b89f402a458"
+  } ]
+}

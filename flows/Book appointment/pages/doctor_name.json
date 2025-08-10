@@ -1,0 +1,49 @@
+{
+  "name": "4b79dd5e-1ecc-4708-af6b-68a74a549302",
+  "displayName": "doctor_name",
+  "form": {
+    "parameters": [ {
+      "displayName": "doctor_name",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "richContent": [ [ {
+          "text": [ "Tap on one of the options below to continue." ],
+          "title": "Please choose the doctor you want to visit:",
+          "type": "description"
+        }, {
+          "options": [ {
+            "text": "Dr. Arjun Mehta – Cardiologist"
+          }, {
+            "text": "Dr. Priya Sharma – Pediatrician"
+          }, {
+            "text": "Dr. Ramesh Iyer – Orthopedic Surgeon"
+          }, {
+            "text": "Dr. Kavita Nair – Neurologist"
+          }, {
+            "text": "Dr. Vikram Desai – General Physician"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.doctor_name != \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "booking_date",
+    "name": "75560a95-fb31-4e7c-a395-632d25bc3694"
+  } ]
+}

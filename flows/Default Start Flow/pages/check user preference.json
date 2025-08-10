@@ -1,0 +1,32 @@
+{
+  "name": "d8695bc7-70f2-4d60-9eec-a934487f2534",
+  "displayName": "check user preference",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "Book appointment",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Book appointment",
+    "name": "d9382595-a7d5-441e-82b7-0dd1e18cd945"
+  }, {
+    "intent": "Reschedule appountment",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Reschedule appointment",
+    "name": "11ccc29b-39f5-4cbb-b6d9-7c2e6fa258ce"
+  }, {
+    "intent": "Cancel appointment",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Cancel appointment",
+    "name": "1e787f55-17ca-4736-8941-78f9346dba6e"
+  } ]
+}

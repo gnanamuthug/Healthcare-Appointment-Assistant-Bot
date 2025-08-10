@@ -1,0 +1,29 @@
+{
+  "name": "93847ffe-9c2d-4dc1-8865-6d18052e0d0e",
+  "displayName": "appt_type",
+  "form": {
+    "parameters": [ {
+      "displayName": "appt_type",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Pease enter reason for book appointment" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.appt_type != \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "doctor_name",
+    "name": "8b587692-1ba4-43de-b12b-fcb78139b2f4"
+  } ]
+}

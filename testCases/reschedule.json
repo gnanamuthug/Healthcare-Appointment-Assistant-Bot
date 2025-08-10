@@ -1,0 +1,111 @@
+{
+  "name": "5bb2f951-4c47-4399-a4ac-87080004a199",
+  "tags": [ "#reschedule" ],
+  "displayName": "reschedule",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "check user preference",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Good day! What can I do for you today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "reschedule appointment"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Reschedule appountment"
+      },
+      "currentPage": {
+        "name": "getpatient_id",
+        "flow": "Reschedule appointment"
+      },
+      "textResponses": [ {
+        "text": [ "Please enter your patient id ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Reschedule appointment"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "PAT5000 "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "enter_new_date",
+        "flow": "Reschedule appointment"
+      },
+      "textResponses": [ {
+        "text": [ "Hi Gnanamuthu, you have an appointment booked on 2025-08-21 with Dr. Vikram Desai - General Physician for Heah ache." ]
+      }, {
+        "text": [ "Please enter the new data to reschedule the appointmnet ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Reschedule appointment"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "2025-08-25"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "check user preference",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Your appointment has been rescheduled successfully to 2025-08-25." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1754798450,
+    "nanos": 371164000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

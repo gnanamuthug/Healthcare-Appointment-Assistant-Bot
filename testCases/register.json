@@ -1,0 +1,199 @@
+{
+  "name": "2fe54fec-c3a9-4ecb-9e47-e3525e297875",
+  "tags": [ "#register" ],
+  "displayName": "register",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "check user preference",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Good day! What can I do for you today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "book an appointment'"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Book appointment"
+      },
+      "currentPage": {
+        "name": "get_patient id",
+        "flow": "Book appointment"
+      },
+      "textResponses": [ {
+        "text": [ "Pease enter your patient_id here ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Book appointment"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "521505105"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "register_patient",
+        "flow": "Register patient"
+      },
+      "textResponses": [ {
+        "text": [ "Patient not found." ]
+      }, {
+        "text": [ "To Register your details \nPlease enter your name ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Register patient"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Gnanamuthu"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "register_patient",
+        "flow": "Register patient"
+      },
+      "textResponses": [ {
+        "text": [ "Please enter your dateofbirth ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Register patient"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "1996-12-18"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "register_patient",
+        "flow": "Register patient"
+      },
+      "textResponses": [ {
+        "text": [ "Please enter your gender ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Register patient"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Male"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "register_patient",
+        "flow": "Register patient"
+      },
+      "textResponses": [ {
+        "text": [ "Please enter your phone number ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Register patient"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "9500998473"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "register_patient",
+        "flow": "Register patient"
+      },
+      "textResponses": [ {
+        "text": [ "Please enter your city name ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Register patient"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Chennai"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "store_patient_details",
+        "flow": "Register patient"
+      },
+      "textResponses": [ {
+        "text": [ "Patient registered successfully! Your Patient ID is PAT5000" ]
+      } ],
+      "currentFlow": {
+        "name": "Register patient"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1754798321,
+    "nanos": 815230000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

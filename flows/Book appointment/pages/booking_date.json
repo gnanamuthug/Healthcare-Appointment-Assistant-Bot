@@ -1,0 +1,32 @@
+{
+  "name": "62804626-ef61-4c45-bde2-33e0a3f3519a",
+  "displayName": "booking_date",
+  "form": {
+    "parameters": [ {
+      "displayName": "booking_date",
+      "required": true,
+      "entityType": "@sys.date",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Pease enter your date to vistit the doctor" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.booking_date != \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirm_booking",
+    "name": "44ad82d2-c6b5-4a7c-addb-16749ed8a849"
+  } ]
+}

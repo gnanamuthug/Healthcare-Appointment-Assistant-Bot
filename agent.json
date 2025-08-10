@@ -1,0 +1,12 @@
+{
+  "displayName": "Healthcare Appointment Assistant",
+  "defaultLanguageCode": "en",
+  "timeZone": "America/Los_Angeles",
+  "projectNumber": 158326260568,
+  "startFlow": "Default Start Flow",
+  "advancedSettings": {
+    "loggingSettings": {
+    
+    }
+  }
+}

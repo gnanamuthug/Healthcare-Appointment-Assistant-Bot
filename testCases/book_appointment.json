@@ -1,0 +1,152 @@
+{
+  "name": "03f2ed1b-0ac0-44b1-afcd-0e732d10dfc3",
+  "tags": [ "#book_appointment" ],
+  "displayName": "book_appointment",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "check user preference",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hi! How are you doing?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "book an appointment"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Book appointment"
+      },
+      "currentPage": {
+        "name": "get_patient id",
+        "flow": "Book appointment"
+      },
+      "textResponses": [ {
+        "text": [ "Pease enter your patient_id here ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Book appointment"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "PAT5000 "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "appt_type",
+        "flow": "Book appointment"
+      },
+      "textResponses": [ {
+        "text": [ "Hi Gnanamuthu, This is your patient_id: PAT5000" ]
+      }, {
+        "text": [ "Pease enter reason for book appointment" ]
+      } ],
+      "currentFlow": {
+        "name": "Book appointment"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Heah ache"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "doctor_name",
+        "flow": "Book appointment"
+      },
+      "currentFlow": {
+        "name": "Book appointment"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Dr. Vikram Desai – General Physician"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "booking_date",
+        "flow": "Book appointment"
+      },
+      "textResponses": [ {
+        "text": [ "Pease enter your date to vistit the doctor" ]
+      } ],
+      "currentFlow": {
+        "name": "Book appointment"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "2025-08-21"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "End Session",
+        "flow": "Book appointment"
+      },
+      "textResponses": [ {
+        "text": [ "Your appointment has been booked successfully!\n\n📅 Date: 2025-08-21\n👨‍⚕️ Doctor: Dr. Vikram Desai - General Physician\n📝 Type: Heah ache" ]
+      } ],
+      "currentFlow": {
+        "name": "Book appointment"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1754798394,
+    "nanos": 938004000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

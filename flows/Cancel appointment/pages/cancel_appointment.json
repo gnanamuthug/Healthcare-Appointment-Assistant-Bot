@@ -1,0 +1,19 @@
+{
+  "name": "92800fb2-3a80-4f27-912b-c361aa5910cc",
+  "displayName": "cancel_appointment",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Healthcare",
+    "tag": "cancel_appointment"
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.appointment_cancelled = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "f2db58c6-9472-4d4a-83b8-8e16f09843ba"
+  } ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "278109b1-f926-439d-869c-966775cd2782",
+  "displayName": "check_patient_id",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Healthcare",
+    "tag": "check_patient"
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.patient_found = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "cancel_appointment",
+    "name": "8439d0b7-4995-4243-afe1-5a087adf57f7"
+  }, {
+    "condition": "$session.params.patient_found = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "retry",
+    "name": "c4b1b7a0-a293-4b25-bfb7-343bbda08143"
+  } ]
+}

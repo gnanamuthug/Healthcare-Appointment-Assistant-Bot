@@ -1,0 +1,31 @@
+{
+  "name": "2dbdc995-be90-4585-9fda-97ed252b06d2",
+  "displayName": "retry",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "retry_counter",
+      "value": "$sys.func.ADD($session.params.retry_counter, 1)"
+    }, {
+      "parameter": "patient_id",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.retry_counter \u003e 2",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Multiplr Try",
+    "name": "edb5a0f2-5731-4908-9dd8-be11e51d301e"
+  }, {
+    "condition": "$session.params.retry_counter \u003c 3",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "get_patient_id",
+    "name": "e2a883ee-91c1-4850-bdb8-ca9520e8a4dd"
+  } ]
+}

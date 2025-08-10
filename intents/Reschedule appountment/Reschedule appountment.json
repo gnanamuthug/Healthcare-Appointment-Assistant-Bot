@@ -1,0 +1,13 @@
+{
+  "name": "a66f4c18-0259-497a-9e24-c4bf936f2fc3",
+  "displayName": "Reschedule appountment",
+  "parameters": [ {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  }, {
+    "id": "date-period",
+    "entityType": "@sys.date-period"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 11
+}

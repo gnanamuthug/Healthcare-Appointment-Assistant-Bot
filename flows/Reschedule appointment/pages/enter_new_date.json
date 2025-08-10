@@ -1,0 +1,32 @@
+{
+  "name": "5da20a39-9a62-40c2-a0dc-ed5f969e5cee",
+  "displayName": "enter_new_date",
+  "form": {
+    "parameters": [ {
+      "displayName": "reschedule_date",
+      "required": true,
+      "entityType": "@sys.date",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Please enter the new data to reschedule the appointmnet ?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.reschedule_date != \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Store_new_date",
+    "name": "9de4a93d-a989-4bce-8013-e89757256f7f"
+  } ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "0134ddfa-6628-438a-88fe-30a089d7ea37",
+  "displayName": "Cancel appointment",
+  "parameters": [ {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 15
+}

@@ -1,0 +1,19 @@
+{
+  "name": "ea0a6d12-ad76-437c-b7b0-f8036269b3bc",
+  "displayName": "Store_new_date",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Healthcare",
+    "tag": "reschedule_appointment"
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.appointment_rescheduled = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "0fa27ecb-5ce5-4d27-8a56-33f387edfacc"
+  } ]
+}

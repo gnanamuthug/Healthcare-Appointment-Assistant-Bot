@@ -1,0 +1,23 @@
+{
+  "name": "9137eec0-4166-444f-a164-e97d149ed9db",
+  "displayName": "Multiplr Try",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You have tried multiple time the session will be end" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "3f6fed8f-57f9-40ba-864e-c9706f62c6d5"
+  } ]
+}

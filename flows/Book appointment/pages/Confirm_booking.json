@@ -1,0 +1,19 @@
+{
+  "name": "f76487f4-5d26-4c46-a6f4-a97a7303fcda",
+  "displayName": "Confirm_booking",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Healthcare",
+    "tag": "booking_appointment"
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.appointment_booked = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "ce536521-dc31-4e7f-97d9-964630155218"
+  } ]
+}

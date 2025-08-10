@@ -1,0 +1,13 @@
+{
+  "name": "d6e92cee-c254-4b55-9eac-e40cdc79310a",
+  "displayName": "Book appointment",
+  "parameters": [ {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  }, {
+    "id": "date-period",
+    "entityType": "@sys.date-period"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 18
+}

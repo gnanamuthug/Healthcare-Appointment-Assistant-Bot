@@ -1,0 +1,26 @@
+{
+  "name": "7b2c5069-66ea-4353-8cc6-6733a1106a9b",
+  "displayName": "check_booking_date",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "Healthcare",
+    "tag": "check_booking_date"
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.booking_found = \"true\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "enter_new_date",
+    "name": "6cfd3991-3e50-4b7e-a099-4a0f08842951"
+  }, {
+    "condition": "$session.params.booking_found = \"false\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "reset_id",
+    "name": "e07ec910-9ebc-4e24-8a3d-ff235285b330"
+  } ]
+}

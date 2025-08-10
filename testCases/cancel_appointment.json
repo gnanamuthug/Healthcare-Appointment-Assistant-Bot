@@ -1,0 +1,89 @@
+{
+  "name": "4f060c76-c1c8-465f-a84b-189ca82d91d3",
+  "tags": [ "#cancel_appointment" ],
+  "displayName": "cancel_appointment",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "check user preference",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hi! How are you doing?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "cancel appointment"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Cancel appointment"
+      },
+      "currentPage": {
+        "name": "get_patient_id",
+        "flow": "Cancel appointment"
+      },
+      "textResponses": [ {
+        "text": [ "Pease enter your patient_id ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Cancel appointment"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "PAT5000 "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "check user preference",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hi Gnanamuthu, This is your patient_id: PAT5000" ]
+      }, {
+        "text": [ "Appointment for Patient ID PAT5000 has been cancelled successfully." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1754798506,
+    "nanos": 165650000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}
